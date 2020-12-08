@@ -1,0 +1,48 @@
+---------------------------  CAU_f28335.pjt - Debug  ---------------------------
+[adc_28335.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "adc_28335.c"
+
+[adc_7656.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "adc_7656.c"
+
+[CAU_f28335.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "CAU_f28335.c"
+
+[compensator.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "compensator.c"
+
+[CPLD_interface.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "CPLD_interface.c"
+
+[dpram_exchange.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "dpram_exchange.c"
+
+[DSP2833x_Adc.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_Adc.c"
+
+[DSP2833x_ADC_cal.asm] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_ADC_cal.asm"
+
+[DSP2833x_DefaultIsr.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_DefaultIsr.c"
+
+[DSP2833x_DMA.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_DMA.c"
+
+[DSP2833x_GlobalVariableDefs.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_GlobalVariableDefs.c"
+
+[DSP2833x_PieCtrl.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_PieCtrl.c"
+
+[DSP2833x_PieVect.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_PieVect.c"
+
+[DSP2833x_SysCtrl.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_SysCtrl.c"
+
+[DSP2833x_usDelay.asm] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_usDelay.asm"
+
+[DSP2833x_Xintf.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP2833x_Xintf.c"
+
+[DSP28xxx_CodeStartBranch.asm] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP28xxx_CodeStartBranch.asm"
+
+[DSP28xxx_SectionCopy_nonBIOS.asm] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"../../Debug.lkf" "DSP28xxx_SectionCopy_nonBIOS.asm"
+
+[filter.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "filter.c"
+
+[offeset.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "offeset.c"
+
+[search_table.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -pdsw225 -fr"D:/Software/CAU_industry/DSP/CAU_f28335/Debug" -i"D:/Software/CAU_industry/DSP/CAU_f28335/DSP2833x_headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "search_table.c"
+
+[Linking...] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

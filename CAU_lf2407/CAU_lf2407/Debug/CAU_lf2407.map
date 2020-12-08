@@ -1,0 +1,420 @@
+******************************************************************************
+TMS320C24xx COFF Linker           Version 7.04                   
+******************************************************************************
+>> Linked Thu Mar 08 14:55:11 2018
+
+OUTPUT FILE NAME:   <./Debug/CAU_lf2407.out>
+ENTRY POINT SYMBOL: "_c_int0"  address: 00000100
+
+
+MEMORY CONFIGURATION
+
+           name     origin    length      used    attributes    fill
+         --------  --------  ---------  --------  ----------  --------
+PAGE 0: VECS      00000000  000000040  00000027     RWIX      
+         PROG      00000100  000007f00  00004519     RWIX      
+         DPRAM_UP  0000f100  000000700  00000044     RWIX      
+         DPRAM_DN  0000f800  000000800  0000002c     RWIX      
+
+PAGE 1: MMRS      00000000  000000060  00000000     RWIX      
+         B2        00000060  000000020  00000000     RWIX      
+         B0        00000200  000000100  00000000     RWIX      
+         B1        00000300  000000100  00000080     RWIX      
+         SARAM     00000800  000000800  0000070e     RWIX      
+         DATA      00008000  000008000  00000000     RWIX      
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.reset     0    00000000    00000000     UNINITIALIZED
+
+.vectors   0    00000000    0000000e     
+                  00000000    0000000e     vectors.obj (.vectors)
+
+.text      0    00000100    00003e37     
+                  00000100    00000027     rts2xx.lib : boot.obj (.text)
+                  00000127    00000000                : errno.obj (.text)
+                  00000127    00000000                : ctype.obj (.text)
+                  00000127    00000000     vectors.obj (.text)
+                  00000127    0000004f     rts2xx.lib : exit.obj (.text)
+                  00000176    000002db     can.obj (.text)
+                  00000451    0000037f     cau_lf2407.obj (.text)
+                  000007d0    0000025b     dpram.obj (.text)
+                  00000a2b    00000206     eeprom.obj (.text)
+                  00000c31    00000168     io.obj (.text)
+                  00000d99    00002a8d     sci.obj (.text)
+                  00003826    00000010     rts2xx.lib : atof.obj (.text)
+                  00003836    00000055                : f_cmp.obj (.text)
+                  0000388b    00000053                : f_ftol.obj (.text)
+                  000038de    00000044                : f_ftou.obj (.text)
+                  00003922    0000007c                : f_mul.obj (.text)
+                  0000399e    0000000d                : f_sub.obj (.text)
+                  000039ab    0000001b                : f_utof.obj (.text)
+                  000039c6    000000ea                : ldiv.obj (.text)
+                  00003ab0    0000002e                : saverest.obj (.text)
+                  00003ade    00000020                : strcmp.obj (.text)
+                  00003afe    00000019                : strcpy.obj (.text)
+                  00003b17    0000001a                : strlen.obj (.text)
+                  00003b31    00000217                : strtod.obj (.text)
+                  00003d48    00000088                : udiv.obj (.text)
+                  00003dd0    000000b6                : f_add.obj (.text)
+                  00003e86    000000a8                : f_div.obj (.text)
+                  00003f2e    00000001                : f_error.obj (.text)
+                  00003f2f    00000008                : f_neg.obj (.text)
+
+.cinit     0    00003f37    000006e2     
+                  00003f37    00000006     rts2xx.lib : exit.obj (.cinit)
+                  00003f3d    00000033     cau_lf2407.obj (.cinit)
+                  00003f70    0000057e     sci.obj (.cinit)
+                  000044ee    00000024     rts2xx.lib : strtod.obj (.cinit)
+                  00004512    00000103                : ctype.obj (.cinit)
+                  00004615    00000003                : errno.obj (.cinit)
+                  00004618    00000001     --HOLE-- [fill = 0000]
+
+.mmrs      1    00000000    00000000     UNINITIALIZED
+
+.bss       1    00000800    00000708     UNINITIALIZED
+                  00000800    000004e6     sci.obj (.bss)
+                  00000ce6    00000000     rts2xx.lib : f_mul.obj (.bss)
+                  00000ce6    00000000                : f_ftou.obj (.bss)
+                  00000ce6    00000000                : f_ftol.obj (.bss)
+                  00000ce6    00000000                : ldiv.obj (.bss)
+                  00000ce6    00000000                : f_utof.obj (.bss)
+                  00000ce6    00000000                : f_sub.obj (.bss)
+                  00000ce6    00000000     io.obj (.bss)
+                  00000ce6    00000000     eeprom.obj (.bss)
+                  00000ce6    00000000     rts2xx.lib : boot.obj (.bss)
+                  00000ce6    00000000                : f_cmp.obj (.bss)
+                  00000ce6    00000000                : atof.obj (.bss)
+                  00000ce6    00000000     vectors.obj (.bss)
+                  00000ce6    00000000     rts2xx.lib : f_add.obj (.bss)
+                  00000ce6    00000000                : udiv.obj (.bss)
+                  00000ce6    00000000                : f_div.obj (.bss)
+                  00000ce6    00000000                : f_neg.obj (.bss)
+                  00000ce6    00000000                : f_error.obj (.bss)
+                  00000ce6    00000000                : strcpy.obj (.bss)
+                  00000ce6    00000000                : strcmp.obj (.bss)
+                  00000ce6    00000000                : saverest.obj (.bss)
+                  00000ce6    00000000                : strlen.obj (.bss)
+                  00000ce6    00000002     can.obj (.bss)
+                  00000ce8    00000001     rts2xx.lib : errno.obj (.bss)
+                  00000d00    00000101                : ctype.obj (.bss)
+                  00000e01    00000022                : exit.obj (.bss)
+                  00000e23    00000020                : strtod.obj (.bss)
+                  00000e43    0000001e     cau_lf2407.obj (.bss)
+                  00000e80    00000088     dpram.obj (.bss)
+
+.const     1    00000f08    00000006     
+                  00000f08    00000006     sci.obj (.const)
+
+.stack     1    00000300    00000080     UNINITIALIZED
+                  00000300    00000000     rts2xx.lib : boot.obj (.stack)
+
+.sysmem    1    00000200    00000000     UNINITIALIZED
+
+dpram_up   0    0000f100    00000044     UNINITIALIZED
+                  0000f100    00000044     dpram.obj (dpram_up)
+
+dpram_dn   0    0000f800    0000002c     UNINITIALIZED
+                  0000f800    0000002c     dpram.obj (dpram_dn)
+
+.data      1    00000000    00000000     UNINITIALIZED
+                  00000000    00000000     rts2xx.lib : boot.obj (.data)
+                  00000000    00000000                : f_neg.obj (.data)
+                  00000000    00000000                : f_error.obj (.data)
+                  00000000    00000000                : f_div.obj (.data)
+                  00000000    00000000                : f_add.obj (.data)
+                  00000000    00000000                : errno.obj (.data)
+                  00000000    00000000                : ctype.obj (.data)
+                  00000000    00000000                : udiv.obj (.data)
+                  00000000    00000000                : strtod.obj (.data)
+                  00000000    00000000                : strlen.obj (.data)
+                  00000000    00000000                : strcpy.obj (.data)
+                  00000000    00000000                : strcmp.obj (.data)
+                  00000000    00000000                : saverest.obj (.data)
+                  00000000    00000000                : ldiv.obj (.data)
+                  00000000    00000000                : f_utof.obj (.data)
+                  00000000    00000000                : f_sub.obj (.data)
+                  00000000    00000000                : f_mul.obj (.data)
+                  00000000    00000000                : f_ftou.obj (.data)
+                  00000000    00000000                : f_ftol.obj (.data)
+                  00000000    00000000                : f_cmp.obj (.data)
+                  00000000    00000000                : atof.obj (.data)
+                  00000000    00000000     vectors.obj (.data)
+                  00000000    00000000     sci.obj (.data)
+                  00000000    00000000     io.obj (.data)
+                  00000000    00000000     eeprom.obj (.data)
+                  00000000    00000000     dpram.obj (.data)
+                  00000000    00000000     cau_lf2407.obj (.data)
+                  00000000    00000000     can.obj (.data)
+                  00000000    00000000     rts2xx.lib : exit.obj (.data)
+
+.switch    0    0000000e    00000019     
+                  0000000e    00000019     sci.obj (.switch)
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+00000800 .bss                             00000000 .data
+00000000 .data                            00000000 edata
+00000100 .text                            00000080 __STACK_SIZE
+00000173 C$$EXIT                          00000100 _c_int0
+00003dd0 F$$ADD                           00000100 .text
+00003836 F$$COMPARE                       00000127 _exit
+00003e86 F$$DIV                           00000154 _atexit
+00003879 F$$EQ                            00000173 _abort
+0000388b F$$FTOL                          00000173 C$$EXIT
+000038de F$$FTOU                          00000176 _can_isr
+00003885 F$$GE                            000001be _can_send
+00003888 F$$GT                            0000022c _CAN_Init
+0000387f F$$LE                            00000286 _clear_rcan
+00003882 F$$LT                            00000298 _can_server
+00003922 F$$MUL                           00000451 _int_dis
+00003f2f F$$NEG                           0000045c _int_enable
+0000387c F$$NE                            00000466 _clean_IFR
+0000399e F$$SUB                           00000472 _disable_WD
+000039ab F$$UTOF                          0000047f _wd_ini
+00003ac8 I$$REST                          0000048c _kick_dog
+00003ab0 I$$SAVE                          0000049b _delay
+00003d48 I$$UDIV                          000004b0 _nothing
+00003d6e I$$UMOD                          000004ba _int5_server
+000039c6 L$$DIVS                          000004e1 _int2_server
+00003a38 L$$DIVU                          00000507 _int1_server
+00003a01 L$$MODS                          0000052b _timer1int
+00003a58 L$$MODU                          00000542 _var_ini
+0000022c _CAN_Init                        00000653 _runing_led
+00000c31 _IO_Init                         0000068e _can_indication_led
+00000c50 _LED_IO                          000006f2 _main
+00000d99 _SCI_INIT                        00000737 _task_executive
+00000e01 _UartRec                         000007d0 _monitor_data
+00000dce _UartSent_str                    00000800 _pass_flag
+00000db6 _UartSent                        00000800 .bss
+00000080 __STACK_SIZE                     00000801 _para_sele
+00000e02 __cleanup_ptr                    00000802 _sci_i
+00000d00 __ctypes_                        00000803 _space
+00000173 _abort                           00000805 _c_return
+00000e80 _alpha_a                         00000807 _table
+00000e81 _alpha_b                         00000809 _c_row
+00000e82 _alpha_c                         0000080c _phase_a_disp
+000008e8 _alpha_disp                      00000811 _phase_b_disp
+00000154 _atexit                          00000816 _phase_c_disp
+00003826 _atof                            0000081b _kpa_str
+000008f6 _basis_disp                      00000820 _kpb_str
+00000e90 _basisa_int                      00000825 _kpc_str
+00000e8f _basisb_int                      0000082a _kia_str
+00000e96 _basisc_int                      0000082f _kib_str
+00000100 _c_int0                          00000834 _kic_str
+00000805 _c_return                        00000839 _kda_str
+00000809 _c_row                           0000083e _kdb_str
+00000e52 _can_id                          00000843 _kdc_str
+0000068e _can_indication_led              00000848 _upa_str
+00000176 _can_isr                         0000084d _upb_str
+000001be _can_send                        00000852 _upc_str
+00000298 _can_server                      00000857 _susceptance_manual_A_str
+0000096c _cancel_str                      0000085c _susceptance_manual_B_str
+00000e48 _canr_flag                       00000861 _susceptance_manual_C_str
+00000e45 _canr_flicke_times               00000866 _set_str
+00000e4c _canr_led_previous               0000086b _mon_str
+00000e57 _canr                            00000870 _vcp
+00000e49 _cans_flag                       00000876 _node_str
+00000e46 _cans_flicke_times               0000087c _limen_str
+00000e4b _cans_led_previous               00000882 _p_a_disp
+00000e5c _cans                            00000888 _p_b_disp
+00000466 _clean_IFR                       0000088e _p_c_disp
+00000286 _clear_rcan                      00000894 _i_a_disp
+00000bff _connected                       0000089a _i_b_disp
+00000ce6 _conv                            000008a0 _i_c_disp
+00000abb _current_value                   000008a6 _d_a_disp
+000008a6 _d_a_disp                        000008ac _d_b_disp
+000008ac _d_b_disp                        000008b2 _d_c_disp
+000008b2 _d_c_disp                        000008b8 _up_a_disp
+0000f800 _data_dn_dpram                   000008be _up_b_disp
+0000f100 _data_up_dpram                   000008c4 _up_c_disp
+0000049b _delay                           000008ca _mode_str
+00000bd7 _description                     000008d0 _quit_str
+00000472 _disable_WD                      000008d6 _list_str
+00000b8b _disconnect                      000008dc _password
+00000e8c _down_a                          000008e2 _separator
+0000093c _down_a_disp                     000008e8 _alpha_disp
+00000e86 _down_a_u                        000008ef _scale_disp
+00000944 _down_b_disp                     000008f6 _basis_disp
+00000e87 _down_b_u                        000008fd _downa_str
+00000e8d _down_b                          00000904 _downb_str
+0000094c _down_c_disp                     0000090b _downc_str
+00000e88 _down_c_u                        00000912 _offset_a_disp
+00000e8e _down_c                          00000919 _offset_c_disp
+000009ab _down_disp                       00000920 _scale_str
+000008fd _downa_str                       00000927 _offset_b_disp
+00000904 _downb_str                       0000092e _mon_pos_1
+0000090b _downc_str                       00000933 _put_data
+00002054 _edit_para                       00000935 _mon_pos_4
+00000a2b _eeprom_ini                      0000093c _down_a_disp
+00000ce8 _errno                           00000944 _down_b_disp
+00000127 _exit                            0000094c _down_c_disp
+00003f2e _f$$error                        00000954 _offseta_str
+00000a66 _fail_in                         0000095c _offsetb_str
+000013de _float_disp                      00000964 _offsetc_str
+000010d6 _floattostr                      0000096c _cancel_str
+00000e54 _gps_time                        00000974 _mon_pos_2
+00001045 _hextostr                        0000097c _mon_pos_3
+00000894 _i_a_disp                        00000985 _mon_pos_5
+0000089a _i_b_disp                        0000098e _mon_pos_7
+000008a0 _i_c_disp                        00000997 _limen_disp
+00000e92 _ia_rms                          000009a1 _up_disp
+00000e94 _ib_rms                          000009ab _down_disp
+00000e97 _ic_rms                          000009b5 _suscpt_disp
+00000a1e _input_erro                      000009bf _kp_disp
+00000507 _int1_server                     000009c9 _ki_disp
+000004e1 _int2_server                     000009d3 _kd_disp
+000004ba _int5_server                     000009dd _pass
+00000451 _int_dis                         000009e7 _mon_pos_8
+0000045c _int_enable                      000009f1 _vcpset
+00000f2d _inttostr                        000009fc _mon_pos_6
+00000a86 _inv_pass                        00000a07 _mon_pos_9
+00000a76 _invalid_com                     00000a12 _node_disp
+000009d3 _kd_disp                         00000a18 _voltage_cal
+00000839 _kda_str                         00000a1e _input_erro
+0000083e _kdb_str                         00000a2b _mode_disp
+00000843 _kdc_str                         00000a2b _eeprom_ini
+000009c9 _ki_disp                         00000a39 _rd_float
+0000082a _kia_str                         00000a39 _manual_Ba_disp
+0000082f _kib_str                         00000a48 _manual_Bb_disp
+00000834 _kic_str                         00000a57 _manual_Bc_disp
+0000048c _kick_dog                        00000a5c _wr_float
+000009bf _kp_disp                         00000a66 _fail_in
+0000081b _kpa_str                         00000a76 _invalid_com
+00000820 _kpb_str                         00000a86 _inv_pass
+00000825 _kpc_str                         00000a86 _rd_word
+00000e47 _led                             00000a97 _state_val
+00000997 _limen_disp                      00000aa9 _tips_l4
+0000087c _limen_str                       00000abb _current_value
+000008d6 _list_str                        00000ace _sci_receive
+000006f2 _main                            00000ae2 _moni_suspend
+00000a39 _manual_Ba_disp                  00000af3 _wr_word
+00000a48 _manual_Bb_disp                  00000af6 _para_input
+00000a57 _manual_Bc_disp                  00000b11 _new_value
+00000a2b _mode_disp                       00000b2d _new_fvalue
+000008ca _mode_str                        00000b4a _tips_l3
+00000e4d _mon_cmd                         00000b68 _tips_l1
+000036f9 _mon_disp                        00000b8b _disconnect
+00000e4e _mon_disp_flag                   00000b91 _wr_enable
+0000092e _mon_pos_1                       00000baf _send
+00000974 _mon_pos_2                       00000bb2 _wr_disable
+0000097c _mon_pos_3                       00000bd3 _rd_status
+00000935 _mon_pos_4                       00000bd7 _description
+00000985 _mon_pos_5                       00000bfa _wr_status
+000009fc _mon_pos_6                       00000bff _connected
+0000098e _mon_pos_7                       00000c28 _tips_l2
+000009e7 _mon_pos_8                       00000c31 _IO_Init
+00000a07 _mon_pos_9                       00000c50 _LED_IO
+0000086b _mon_str                         00000c55 _mon_title
+00000c9d _mon_table                       00000c70 _read_s
+00000c55 _mon_title                       00000c9d _mon_table
+00000e4f _mon_toggle                      00000cd9 _switch_out
+00000ec4 _moni_data                       00000ce6 _conv
+00000ae2 _moni_suspend                    00000ce8 _errno
+000007d0 _monitor_data                    00000d00 __ctypes_
+00000b2d _new_fvalue                      00000d10 _syn_data
+00000b11 _new_value                       00000d99 _SCI_INIT
+00000e43 _node                            00000db6 _UartSent
+00000a12 _node_disp                       00000dce _UartSent_str
+00000876 _node_str                        00000e01 _UartRec
+000004b0 _nothing                         00000e02 __cleanup_ptr
+00000912 _offset_a_disp                   00000e2e _strtoint
+00000927 _offset_b_disp                   00000e43 _node
+00000919 _offset_c_disp                   00000e44 _time_step
+00000954 _offseta_str                     00000e45 _canr_flicke_times
+0000095c _offsetb_str                     00000e46 _cans_flicke_times
+00000964 _offsetc_str                     00000e47 _led
+000013a8 _one_para_disp                   00000e48 _canr_flag
+00000e98 _order_data                      00000e49 _cans_flag
+00000882 _p_a_disp                        00000e4a _run_flag
+00000888 _p_b_disp                        00000e4b _cans_led_previous
+0000088e _p_c_disp                        00000e4c _canr_led_previous
+00000af6 _para_input                      00000e4d _mon_cmd
+00000801 _para_sele                       00000e4e _mon_disp_flag
+00000800 _pass_flag                       00000e4f _mon_toggle
+000008dc _password                        00000e50 _rel_time
+000009dd _pass                            00000e52 _can_id
+0000080c _phase_a_disp                    00000e54 _gps_time
+00000811 _phase_b_disp                    00000e56 _state
+00000816 _phase_c_disp                    00000e57 _canr
+00000933 _put_data                        00000e5c _cans
+000008d0 _quit_str                        00000e80 _alpha_a
+00000a39 _rd_float                        00000e81 _alpha_b
+00000bd3 _rd_status                       00000e82 _alpha_c
+00000a86 _rd_word                         00000e83 _up_a_u
+00000c70 _read_s                          00000e84 _up_b_u
+00000e50 _rel_time                        00000e85 _up_c_u
+00000e4a _run_flag                        00000e86 _down_a_u
+00000653 _runing_led                      00000e87 _down_b_u
+00002c27 _save_para                       00000e88 _down_c_u
+000008ef _scale_disp                      00000e89 _up_a
+00000920 _scale_str                       00000e8a _up_b
+00000802 _sci_i                           00000e8b _up_c
+00000ace _sci_receive                     00000e8c _down_a
+00003378 _sci_server                      00000e8d _down_b
+00000baf _send                            00000e8e _down_c
+000008e2 _separator                       00000e8f _basisb_int
+00000866 _set_str                         00000e90 _basisa_int
+00000803 _space                           00000e91 _uc_rms
+00000e56 _state                           00000e92 _ia_rms
+00000a97 _state_val                       00000e93 _ua_rms
+00003ade _strcmp                          00000e94 _ib_rms
+00003afe _strcpy                          00000e95 _ub_rms
+00003b17 _strlen                          00000e96 _basisc_int
+00003b31 _strtod                          00000e97 _ic_rms
+00000e2e _strtoint                        00000e98 _order_data
+00000857 _susceptance_manual_A_str        00000ec4 _moni_data
+0000085c _susceptance_manual_B_str        00000f08 end
+00000861 _susceptance_manual_C_str        00000f2d _inttostr
+000009b5 _suscpt_disp                     00001045 _hextostr
+00000cd9 _switch_out                      000010d6 _floattostr
+00000d10 _syn_data                        000013a8 _one_para_disp
+00000807 _table                           000013de _float_disp
+00000737 _task_executive                  0000140b _value_display
+00000e44 _time_step                       00002054 _edit_para
+0000052b _timer1int                       00002c27 _save_para
+00000b68 _tips_l1                         00003378 _sci_server
+00000c28 _tips_l2                         000036f9 _mon_disp
+00000b4a _tips_l3                         00003826 _atof
+00000aa9 _tips_l4                         00003836 F$$COMPARE
+00000e93 _ua_rms                          00003879 F$$EQ
+00000e95 _ub_rms                          0000387c F$$NE
+00000e91 _uc_rms                          0000387f F$$LE
+00000e89 _up_a                            00003882 F$$LT
+000008b8 _up_a_disp                       00003885 F$$GE
+00000e83 _up_a_u                          00003888 F$$GT
+000008be _up_b_disp                       0000388b F$$FTOL
+00000e84 _up_b_u                          000038de F$$FTOU
+00000e8a _up_b                            00003922 F$$MUL
+00000e85 _up_c_u                          0000399e F$$SUB
+000008c4 _up_c_disp                       000039ab F$$UTOF
+00000e8b _up_c                            000039c6 L$$DIVS
+000009a1 _up_disp                         00003a01 L$$MODS
+00000848 _upa_str                         00003a38 L$$DIVU
+0000084d _upb_str                         00003a58 L$$MODU
+00000852 _upc_str                         00003ab0 I$$SAVE
+0000140b _value_display                   00003ac8 I$$REST
+00000542 _var_ini                         00003ade _strcmp
+00000870 _vcp                             00003afe _strcpy
+000009f1 _vcpset                          00003b17 _strlen
+00000a18 _voltage_cal                     00003b31 _strtod
+0000047f _wd_ini                          00003d48 I$$UDIV
+00000bb2 _wr_disable                      00003d6e I$$UMOD
+00000b91 _wr_enable                       00003dd0 F$$ADD
+00000a5c _wr_float                        00003e86 F$$DIV
+00000bfa _wr_status                       00003f2e _f$$error
+00000af3 _wr_word                         00003f2f F$$NEG
+00003f37 cinit                            00003f37 cinit
+00000000 edata                            00003f37 etext
+00000f08 end                              0000f100 _data_up_dpram
+00003f37 etext                            0000f800 _data_dn_dpram
+ffffffff pinit                            ffffffff pinit
+
+[256 symbols]
