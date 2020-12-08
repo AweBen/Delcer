@@ -60,6 +60,3 @@ LinkOrder=1
 ["DSP2833x_headers\cmd\F2833x_nonBIOS_flash.cmd" Settings: "Release"]
 LinkOrder=1
 
-
-[Tools]
-ToolDeleteList 
