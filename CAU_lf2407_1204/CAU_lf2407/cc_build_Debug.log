@@ -1,0 +1,27 @@
+---------------------------  CAU_lf2407.pjt - Debug  ---------------------------
+[can.c] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "can.c"
+[can.c]
+
+[cau_lf2407.c] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "cau_lf2407.c"
+[cau_lf2407.c]
+
+[dpram.c] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "dpram.c"
+[dpram.c]
+
+[eeprom.c] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "eeprom.c"
+[eeprom.c]
+
+[io.c] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "io.c"
+[io.c]
+
+[sci.c] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "sci.c"
+[sci.c]
+
+[vectors.asm] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -g -q -fr"D:/Software/CAU_industry/DSP/CAU_lf2407/CAU_lf2407/Debug" -i"C:/CCStudio_v3.3PLA/C2400/cgtools/include" -d"_DEBUG" -pw1 -v2xx -@"CAU_lf2407/Debug.lkf" "vectors.asm"
+<vectors.asm>
+
+[Linking...] "C:\CCStudio_v3.3PLA\C2400\cgtools\bin\dspcl" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.
